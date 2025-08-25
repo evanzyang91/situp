@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>situp!</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>situp!</h1>
+        <p>saving your slouch.</p>
+        <div class="instructions">
+            <strong>Instructions:</strong> Place your phone (or laptop) perpendicular to you with your side facing the screen for the best results
+        </div>
+    </div>
+
+    <div class="camera-container">
+        <video id="videoElement" autoplay muted playsinline></video>
+        <canvas id="canvasElement"></canvas>
+    </div>
+
+    <div class="controls">
+        <button id="startBtn" class="btn">Start Camera</button>
+        <button id="stopBtn" class="btn" disabled>Stop Camera</button>
+        <button id="switchBtn" class="btn" disabled>Switch Camera</button>
+    </div>
+
+    <div class="status" id="status">
+        <div class="loading"></div>Loading pose detection...
+    </div>
+
+    <div class="pose-info" id="poseInfo" style="display: none;">
+        <div class="info-card">
+            <div class="label">Keypoints Detected</div>
+            <div class="value" id="keypointCount">0</div>
+        </div>
+        <div class="info-card">
+            <div class="label">FPS</div>
+            <div class="value" id="fpsCounter">0</div>
+        </div>
+        <div class="info-card">
+            <div class="label">Neck Angle</div>
+            <div class="value" id="neckAngle">0°</div>
+        </div>
+    </div>
+
+    <div class="posture-display" id="postureDisplay" style="display: none;">
+        <div class="posture-status-large" id="postureStatusLarge">
+            <div class="status-icon" id="statusIcon">👤</div>
+            <div class="status-text">
+                <div class="status-title" id="statusTitle">Analyzing Posture...</div>
+                <div class="status-subtitle" id="statusSubtitle">Position yourself perpendicular to the camera</div>
+            </div>
+        </div>
+        <div class="posture-timer" id="postureTimer" style="display: none;">
+            <div class="timer-label">Poor posture detected for:</div>
+            <div class="timer-value" id="timerValue">0s</div>
+            <div class="timer-bar">
+                <div class="timer-fill" id="timerFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="posture-alert" id="postureAlert" style="display: none;">
+        <div class="alert-content">
+            <span class="alert-icon">⚠️</span>
+            <div class="alert-text">
+                <div class="alert-title">Poor Posture Maintained!</div>
+                <div class="alert-message">Straighten your neck and sit upright</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
