@@ -20,34 +20,19 @@
         </div>
     </div>
 
-    <div class="camera-container">
-        <video id="videoElement" autoplay muted playsinline></video>
-        <canvas id="canvasElement"></canvas>
-    </div>
-
     <div class="controls">
         <button id="startBtn" class="btn">Start Camera</button>
         <button id="stopBtn" class="btn" disabled>Stop Camera</button>
         <button id="switchBtn" class="btn" disabled>Switch Camera</button>
     </div>
 
-    <div class="status" id="status">
-        <div class="loading"></div>Loading pose detection...
+    <div class="camera-container">
+        <video id="videoElement" autoplay muted playsinline></video>
+        <canvas id="canvasElement"></canvas>
     </div>
 
-    <div class="pose-info" id="poseInfo" style="display: none;">
-        <div class="info-card">
-            <div class="label">Keypoints Detected</div>
-            <div class="value" id="keypointCount">0</div>
-        </div>
-        <div class="info-card">
-            <div class="label">FPS</div>
-            <div class="value" id="fpsCounter">0</div>
-        </div>
-        <div class="info-card">
-            <div class="label">Neck Angle</div>
-            <div class="value" id="neckAngle">0°</div>
-        </div>
+    <div class="status" id="status">
+        <div class="loading"></div>Loading pose detection...
     </div>
 
     <div class="posture-display" id="postureDisplay" style="display: none;">
@@ -64,6 +49,21 @@
             <div class="timer-bar">
                 <div class="timer-fill" id="timerFill"></div>
             </div>
+        </div>
+    </div>
+
+    <div class="pose-info" id="poseInfo" style="display: none;">
+        <div class="info-card">
+            <div class="label">Keypoints Detected</div>
+            <div class="value" id="keypointCount">0</div>
+        </div>
+        <div class="info-card">
+            <div class="label">FPS</div>
+            <div class="value" id="fpsCounter">0</div>
+        </div>
+        <div class="info-card">
+            <div class="label">Neck Angle</div>
+            <div class="value" id="neckAngle">0°</div>
         </div>
     </div>
 
