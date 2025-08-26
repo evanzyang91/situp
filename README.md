@@ -2,7 +2,7 @@
     <img alt="Logo" src="resources/logo.png" width="100" />
 </div>
 <h1 align="center">
-    situp! - Web App for Posture Correction
+    situp! - Live Posture Feedback
 </h1>
 <p align="center">
    place your device to the side to begin tracking
