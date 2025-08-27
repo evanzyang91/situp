@@ -11,13 +11,13 @@
 ![main camera](resources/ss1.jpg)
 
 <p align="center">
-   get real-time stats as you work
+   scroll down to get real-time stats as you work
 </p>
 
 ![posture statistics](resources/ss2.jpg)
 
 <p align="center">
-   receive warnings when poor posture persists
+   get warnings when poor posture persists
 </p>
 
 ![slouch warning](resources/ss3.jpg)
