@@ -8,16 +8,16 @@
    place your device to the side to begin tracking
 </p>
 
-![main camera](resources/ss1.jpeg)
+![main camera](resources/ss1.jpg)
 
 <p align="center">
    get real-time stats as you work
 </p>
 
-![posture statistics](resources/ss2.jpeg)
+![posture statistics](resources/ss2.jpg)
 
 <p align="center">
    receive warnings when poor posture persists
 </p>
 
-![slouch warning](resources/ss3.jpeg)
+![slouch warning](resources/ss3.jpg)
