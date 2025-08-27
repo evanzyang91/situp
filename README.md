@@ -5,19 +5,19 @@
     situp! - Live Posture Feedback
 </h1>
 <p align="center">
-   place your device to the side to begin tracking
+   place your device to the side to begin tracking.
 </p>
 
 ![main camera](resources/ss1.jpg)
 
 <p align="center">
-   scroll down to get real-time stats as you work
+   scroll down to get real-time stats as you work.
 </p>
 
 ![posture statistics](resources/ss2.jpg)
 
 <p align="center">
-   get warnings when poor posture persists
+   get warnings as poor posture persists.
 </p>
 
 ![slouch warning](resources/ss3.jpg)
