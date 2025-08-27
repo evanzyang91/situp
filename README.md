@@ -21,3 +21,5 @@
 </p>
 
 ![slouch warning](resources/ss3.jpg)
+
+[try it HERE for free](https://evanzyang91.github.io/situp/)
