@@ -22,4 +22,8 @@
 
 ![slouch warning](resources/ss3.jpg)
 
-[try it HERE for free](https://evanzyang91.github.io/situp/)
+## Desc
+
+Try it [HERE](https://evanzyang91.github.io/situp/) for free!
+
+Made using Mediapipe pose detection API.
